@@ -1,12 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amirhossein Zafarfard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #1a0026;
+      color: #fff;
+      margin: 0;
+      padding: 0 16px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      max-width: 180px;
+      border-radius: 50%;
+      border: 4px solid #9b59b6;
+    }
+    h1 {
+      color: #bb6bd9;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    nav button {
+      background: #bb6bd9;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .content { display: none; }
+    .content.active { display: block; }
+    ul { padding-left: 20px; }
+    a { color: #9b59b6; text-decoration: none; }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Amirhossein Zafarfard's Official Website</h1>
-  <p>Professional football player - Istanbul Bozkurtspor 🇹🇷</p>
-  <p>Instagram: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></p>
-</body>
+  <header>
+    <img src="your-photo-url.jpg" alt="Amirhossein Zafarfard" />
+    <h1>Amirhossein Zafarfard</h1>
+    <p>Professional Footballer | Forward | Istanbul Bozkurtspor</p>
+  </header>  <nav>
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('fa')">فارسی</button>
+    <button onclick="switchLang('tr')">Türkçe</button>
+  </nav>  <section id="en" class="content active">
+    <h2>🔥 About Me</h2>
+    <p>I am a professional footballer from Iran playing as a forward in Turkey. My dream is to reach La Liga and become a global name.</p>
+    <h2>🎯 Achievements</h2>
+    <ul>
+      <li>Top Scorer – Mashhad Youth Leagues (x4)</li>
+      <li>Selected – Khorasan Razavi Provincial Team (2023–2024)</li>
+      <li>Player – Istanbul Bozkurtspor, Jersey No. 11</li>
+    </ul>
+    <h2>📩 Contact</h2>
+    <p>Instagram: <a href="https://instagram.com/zafarfard11">@zafarfard11</a><br>
+    Agent: Mahmoud Samadi – <a href="https://instagram.com/fc.samadi">@fc.samadi</a></p>
+  </section>  <section id="fa" class="content">
+    <h2>🔥 درباره من</h2>
+    <p>من امیرحسین ظفرفرد، بازیکن فوتبال حرفه‌ای اهل ایران هستم که به عنوان مهاجم در ترکیه بازی می‌کنم. هدف نهایی من رسیدن به لالیگا و مطرح شدن در سطح جهانی است.</p>
+    <h2>🎯 افتخارات</h2>
+    <ul>
+      <li>۴ بار آقای گل لیگ‌های جوانان مشهد</li>
+      <li>بازیکن منتخب تیم استان خراسان رضوی (۱۴۰۲–۱۴۰۳)</li>
+      <li>بازیکن باشگاه استانبول بوزکورت اسپور (شماره ۱۱)</li>
+    </ul>
+    <h2>📩 تماس</h2>
+    <p>اینستاگرام: <a href="https://instagram.com/zafarfard11">@zafarfard11</a><br>
+    مدیر برنامه: محمود صمدی – <a href="https://instagram.com/fc.samadi">@fc.samadi</a></p>
+  </section>  <section id="tr" class="content">
+    <h2>🔥 Hakkımda</h2>
+    <p>Ben Amirhossein Zafarfard, İranlı profesyonel bir futbolcuyum. Türkiye'de forvet olarak oynuyorum. En büyük hedefim La Liga’da oynamak ve dünya çapında tanınmak.</p>
+    <h2>🎯 Başarılar</h2>
+    <ul>
+      <li>Meşhed Gençlik Liglerinde 4 kez Gol Kralı</li>
+      <li>Horasan Rezevi Eyalet Seçme Takımı Oyuncusu (2023–2024)</li>
+      <li>Istanbul Bozkurtspor Oyuncusu (Forma No: 11)</li>
+    </ul>
+    <h2>📩 İletişim</h2>
+    <p>Instagram: <a href="https://instagram.com/zafarfard11">@zafarfard11</a><br>
+    Menajer: Mahmoud Samadi – <a href="https://instagram.com/fc.samadi">@fc.samadi</a></p>
+  </section>  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+  </script></body>
 </html>
