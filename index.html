@@ -10,6 +10,7 @@
       --purple-mid:  #6a11cb;
       --purple-light:#bb86fc;
       --gold:        #ffd700;
+      --light-text:  #333;
     }
     body {
       margin: 0;
@@ -31,20 +32,23 @@
     }
     nav {
       display: flex;
-      justify-content: center;
-      gap: 2rem;
+      justify-content: space-between;
+      align-items: center;
       background: linear-gradient(to left, var(--purple-mid), var(--purple-light));
-      padding: 1rem;
+      padding: 1rem 2rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
       position: sticky;
       top: 0;
       z-index: 999;
     }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 700;
-      padding: 0.5rem;
       position: relative;
     }
     nav a::after {
@@ -60,6 +64,21 @@
     }
     nav a:hover::after {
       opacity: 1;
+    }
+    .lang-switcher button {
+      margin-right: 10px;
+      background: #fff;
+      color: #6a11cb;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .lang-switcher button:hover {
+      background: #bb86fc;
+      color: white;
     }
     header {
       background: linear-gradient(to left, #6a11cb, #2575fc);
@@ -169,25 +188,34 @@
       color: #fff;
       font-size: 1.5rem;
     }
-    @media (max-width: 600px) {
-      .gallery img {
-        width: 100%;
-      }
-      .stat-card {
-        width: 100%;
-      }
+    body.light {
+      background: #ffffff;
+      color: var(--light-text);
+    }
+    body.light h1, body.light h2 {
+      color: var(--purple-dark);
+    }
+    body.light .container {
+      background-color: #f1f1f1;
+      color: var(--light-text);
     }
   </style>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="smoke"></div>
   <button class="toggle-btn" onclick="toggleMode()">🌓 تغییر حالت</button>
   <nav>
-    <a href="#intro">معرفی</a>
-    <a href="#stats">آمار</a>
-    <a href="#gallery">گالری</a>
-    <a href="#contact">ارتباط</a>
+    <div class="nav-links">
+      <a href="#intro">معرفی</a>
+      <a href="#stats">آمار</a>
+      <a href="#gallery">گالری</a>
+      <a href="#contact">ارتباط</a>
+    </div>
+    <div class="lang-switcher">
+      <button>FA</button>
+      <button>EN</button>
+      <button>TR</button>
+    </div>
   </nav>
   <header>
     <h1>امیرحسین ظفرفرد</h1>
@@ -195,7 +223,12 @@
   </header>
   <div class="container" id="intro">
     <h2>معرفی کامل</h2>
-    <p>… [متن معرفی باقی می‌ماند] …</p>
+    <p>
+      امیرحسین ظفرفرد، متولد ۲۴ فوریه ۲۰۰۵ در مشهد، ایران است. او با قد ۱۸۴ سانتی‌متر و وزن ۶۸ کیلوگرم، به عنوان یک مهاجم فوتبال، شناخته می‌شود. امیرحسین در حال حاضر در تیم استانبول بوزکورت‌اسپور با شماره پیراهن ۱۱ بازی می‌کند. او سابقه بازی در تیم‌های پایه مختلف ایران و همچنین تیم منتخب استان خراسان رضوی در سال ۱۴۰۲–۱۴۰۳ را دارد. وی چهار مرتبه آقای گل لیگ‌های مشهد و استان شده است.
+    </p>
+    <p>
+      او به زبان‌های فارسی، انگلیسی، ترکی و آلمانی مسلط است و تمرکز اصلی‌اش روی پیشرفت حرفه‌ای در فوتبال اروپا به‌ویژه اسپانیا، پرتغال و ایتالیاست. امیرحسین به تنهایی برای ادامه مسیر حرفه‌ای خود به ترکیه مهاجرت کرده و اولویت زندگی‌اش را موفقیت در فوتبال قرار داده است. او معتقد است که با تلاش روزانه و تمرین منظم، می‌تواند به آرزوهایش در فوتبال اروپا برسد.
+    </p>
   </div>
   <div class="container" id="stats">
     <h2>افتخارات و آمار</h2>
@@ -220,6 +253,7 @@
       <li>اینستاگرام: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></li>
       <li>مدیر برنامه: محمود صمدی</li>
       <li>شماره تماس مدیر برنامه: +90 546 826 7220</li>
+      <li>شماره تماس شخصی: +98 905 005 5365</li>
     </ul>
     <div class="social-icons">
       <a href="https://instagram.com/zafarfard11" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -233,16 +267,6 @@
     function toggleMode() {
       const body = document.body;
       body.classList.toggle('light');
-      if (body.classList.contains('light')) {
-        body.style.background = '#f5f5f5';
-        body.style.color = '#000000';
-        document.querySelectorAll('.container').forEach(c => c.style.backgroundColor = '#ffffff');
-      } else {
-        body.style.background = "url('https://images.unsplash.com/photo-1609334042436-cd9f2e48a8c0?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed";
-        body.style.backgroundSize = "cover";
-        body.style.color = '#ffffff';
-        document.querySelectorAll('.container').forEach(c => c.style.backgroundColor = 'rgba(0, 0, 0, 0.6)');
-      }
     }
   </script>
 </body>
