@@ -1,113 +1,129 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amirhossein Zafarfard - Official Profile</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #3b0a69, #8e44ad);
-      color: #fff;
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirhossein Zafarfard | Official Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1b2e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }header {
+        background-color: #6b21a8;
+        padding: 20px;
+        text-align: center;
     }
-    header {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: rgba(0, 0, 0, 0.3);
-    }
+
     header h1 {
-      font-size: 3rem;
-      margin: 0.5rem 0;
+        margin: 0;
+        font-size: 2.5em;
     }
-    header h2 {
-      font-size: 1.5rem;
-      font-weight: 300;
-    }
+
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 1rem 0;
+        text-align: center;
+        padding: 15px;
+        background-color: #3f3c5a;
     }
-    nav button {
-      background: #fff;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      color: #6a0dad;
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
     }
+
     section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #2c2a3f;
+        border-radius: 10px;
     }
-    section h3 {
-      color: #ffc;
-      margin-top: 0;
+
+    section h2 {
+        color: #c084fc;
     }
-    .highlight {
-      color: #ffda79;
-      font-weight: bold;
-    }
+
     footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #ccc;
+        background-color: #3f3c5a;
+        text-align: center;
+        padding: 15px;
+        color: #bbb;
     }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Amirhossein Zafarfard</h1>
-    <h2>Professional Footballer | Forward #11 - Istanbul Bozkurtspor</h2>
-    <nav>
-      <button onclick="switchLang('en')">EN</button>
-      <button onclick="switchLang('fa')">FA</button>
-      <button onclick="switchLang('tr')">TR</button>
-    </nav>
-  </header>
-  <section id="profile">
-    <h3>About Me</h3>
-    <p>
-      I’m <span class="highlight">Amirhossein Zafarfard</span>, born on February 24, 2005 in Mashhad, Iran. I’m a forward with a height of 184cm and a weight of 68kg. Currently playing for <strong>Istanbul Bozkurtspor</strong> in Turkey’s Amateur League (4th tier) wearing jersey number 11.
-    </p>
-    <p>
-      I have been the top scorer <strong>four times</strong> in both Mashhad and Khorasan provincial leagues. I have represented the <strong>Khorasan province elite squad (2023–2024)</strong>.
-    </p>
-    <p>
-      My dream is to reach <span class="highlight">La Liga</span> and play for <strong>Real Madrid</strong> one day. I also aspire to compete in the <strong>Portuguese and Spanish leagues</strong>, showcasing my talents on the biggest stages in Europe.
-    </p>
-  </section>  <section id="contact">
-    <h3>Contact & Representation</h3>
-    <p>Email: amirhosseinzafarfard@gmail.com</p>
-    <p>Phone: +98 905 005 5365</p>
-    <p>Instagram: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></p>
-    <p>Agent: Mahmoud Samadi</p>
-    <p>Phone: +90 546 826 7220</p>
-    <p>Instagram: <a href="https://instagram.com/fc.samadi" target="_blank">@fc.samadi</a></p>
-  </section>  <section id="languages">
-    <h3>Languages</h3>
-    <ul>
-      <li>Persian (Native)</li>
-      <li>English (Fluent)</li>
-      <li>Turkish (Intermediate)</li>
-    </ul>
-  </section>  <section id="goals">
-    <h3>Goals & Personality</h3>
-    <p>
-      I moved alone to Turkey to follow my football dream. I believe in relentless hard work and have always prioritized football above all else—even over personal relationships. I train daily, walk 8km each day, and am fully committed to professional growth.
-    </p>
-  </section>  <footer>
-    &copy; 2025 Amirhossein Zafarfard. All rights reserved.
-  </footer>  <script>
-    function switchLang(lang) {
-      alert('Multilingual support is in progress. Currently, only English is available.');
+
+    .lang-switch {
+        position: absolute;
+        right: 15px;
+        top: 20px;
     }
-  </script></body>
-</html>
+
+    .lang-switch button {
+        background-color: #c084fc;
+        border: none;
+        padding: 8px 12px;
+        margin-left: 10px;
+        border-radius: 5px;
+        color: #1e1b2e;
+        cursor: pointer;
+        font-weight: bold;
+    }
+</style>
+
+</head><body>
+    <header>
+        <h1>Amirhossein Zafarfard</h1>
+        <p>Professional Football Player</p>
+        <div class="lang-switch">
+            <button onclick="changeLang('en')">English</button>
+            <button onclick="changeLang('fa')">فارسی</button>
+            <button onclick="changeLang('tr')">Türkçe</button>
+        </div>
+    </header><nav>
+    <a href="#about">About Me</a>
+    <a href="#career">Career</a>
+    <a href="#goals">Goals</a>
+    <a href="#skills">Languages</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I’m Amirhossein Zafarfard, born February 24, 2005, in Mashhad, Iran. I’m a forward footballer currently playing for Istanbul Bozkurtspor, wearing number 11. Standing at 184 cm and weighing 68 kg, I’ve played for various youth teams in Iran and was the top scorer four times in Mashhad and Khorasan leagues. My Instagram: <a style="color:#c084fc" href="https://instagram.com/zafarfard11">@zafarfard11</a>.</p>
+</section>
+
+<section id="career">
+    <h2>Career History</h2>
+    <p>Amateur League (4th tier) - Istanbul Bozkurtspor. Previously represented youth and provincial teams in Iran. Joined Turkish football to grow my game and climb the European ladder.</p>
+</section>
+
+<section id="goals">
+    <h2>Goals & Aspirations</h2>
+    <p>My ambition is to play in top European leagues, especially La Liga in Spain and Liga Portugal. I aim to move from Turkish leagues into higher competitive levels across Europe. My dream is to play for Real Madrid.</p>
+</section>
+
+<section id="skills">
+    <h2>Languages</h2>
+    <p>Fluent in Persian (Farsi), English, and Turkish.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+    <p>Phone (Iran): +989050055365<br>
+       Phone (Turkey): +905468267220<br>
+       Email: contact.zafarfard@gmail.com<br>
+       Agent: Mahmoud Samadi – Instagram: <a style="color:#c084fc" href="https://instagram.com/fc.samadi">@fc.samadi</a>
+    </p>
+</section>
+
+<footer>
+    &copy; 2025 Amirhossein Zafarfard | All rights reserved.
+</footer>
+
+<script>
+    function changeLang(lang) {
+        alert("Multilingual support is coming soon.\nزبان‌ها به زودی فعال می‌شوند.\nÇok yakında çok dilli destek geliyor.");
+    }
+</script>
+
+</body></html>
