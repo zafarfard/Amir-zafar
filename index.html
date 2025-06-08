@@ -1,121 +1,73 @@
-<!DOCTYPE html><html lang="fa" dir="rtl">
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>امیرحسین ظفرفرد | فوتبالیست حرفه‌ای</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amirhossein Zafarfard | Football Player</title>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    /* [پیشوند تمام کدهای موجود حفظ شده و همچنان باقی می‌ماند] */.timeline {
-  position: relative;
-  padding: 2rem;
-  border-left: 3px solid #bb86fc;
-  margin: 4rem auto;
-}
-.timeline-event {
-  margin-bottom: 2rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-.timeline-event::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 0.25rem;
-  width: 12px;
-  height: 12px;
-  background: #bb86fc;
-  border-radius: 50%;
-}
-.video-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-.video-gallery iframe {
-  width: 100%;
-  aspect-ratio: 16/9;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-.resume-download {
-  text-align: center;
-  margin: 3rem 0;
-}
-.resume-download a {
-  background: #bb86fc;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-.resume-download a:hover {
-  background: #6a11cb;
-}
-form.contact-form {
-  margin-top: 2rem;
-  display: grid;
-  gap: 1rem;
-}
-form.contact-form input,
-form.contact-form textarea {
-  padding: 0.6rem;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-form.contact-form button {
-  background: #6a11cb;
-  color: white;
-  padding: 0.6rem;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-form.contact-form button:hover {
-  background: #bb86fc;
-}
-
+    body { font-family: 'Vazirmatn', sans-serif; background: #0d0d0d url('https://images.unsplash.com/photo-1580734070380-8bc7066eeb6b?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed; background-size: cover; color: #fff; }
+    .overlay { background: rgba(0, 0, 0, 0.8); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+    section { padding: 4rem 2rem; border-bottom: 1px solid #444; }
+    h2 { color: #bb86fc; margin-bottom: 1rem; }
+    nav.navbar { background: linear-gradient(to left, #6a11cb, #2575fc); box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+    .gallery img { width: 100%; border: 3px solid #bb86fc; border-radius: 10px; margin-bottom: 1rem; transition: 0.3s; }
+    .gallery img:hover { transform: scale(1.03); }
+    .lang-select { cursor: pointer; padding: 0.3rem 1rem; border-radius: 8px; background: #fff; color: #6a11cb; font-weight: bold; }
+    .chart-container { background: #fff; padding: 1rem; border-radius: 10px; }
   </style>
 </head>
 <body>
-  <!-- زبان و هدر و معرفی همانطور باقی می‌ماند -->  <div class="container">
-    <h2>مسیر حرفه‌ای</h2>
-    <div class="timeline">
-      <div class="timeline-event">
-        <strong>2016:</strong> آغاز فوتبال حرفه‌ای در آکادمی مشهد
-      </div>
-      <div class="timeline-event">
-        <strong>2021:</strong> ورود به تیم منتخب خراسان رضوی
-      </div>
-      <div class="timeline-event">
-        <strong>2023:</strong> مهاجرت به ترکیه برای فوتبال اروپایی
-      </div>
-      <div class="timeline-event">
-        <strong>2025:</strong> پیوستن به باشگاه Bozkurtspor استانبول
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">⚽ Zafarfard</a>
+    <div class="d-flex gap-3">
+      <span class="lang-select" onclick="setLang('fa')">FA</span>
+      <span class="lang-select" onclick="setLang('en')">EN</span>
+      <span class="lang-select" onclick="setLang('tr')">TR</span>
     </div>
-  </div>  <div class="container">
-    <h2>ویدئوهای من</h2>
-    <div class="video-gallery">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/3GwjfUFyY6M" allowfullscreen></iframe>
-    </div>
-  </div>  <div class="container resume-download">
-    <h2>دانلود رزومه من</h2>
-    <a href="/docs/amirhossein_cv.pdf" target="_blank">📄 دانلود فایل PDF</a>
-  </div>  <div class="container">
-    <h2>تماس با من</h2>
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="نام کامل شما" required />
-      <input type="email" name="email" placeholder="ایمیل" required />
-      <textarea name="message" rows="5" placeholder="پیام شما" required></textarea>
-      <button type="submit">ارسال پیام</button>
-    </form>
-  </div>  <!-- بقیه بخش‌ها (گالری، آمار، تماس، فوتر) بدون تغییر باقی‌مانده --></body>
+  </div>
+</nav>
+<main id="content" class="container-fluid position-relative">
+<section>
+<h2 data-fa="آغاز فوتبال" data-en="Beginning of Football" data-tr="Futbola Başlangıç">آغاز فوتبال</h2>
+<p data-fa="من، امیرحسین ظفرفرد، از سن ۸ سالگی پا به دنیای فوتبال گذاشتم. شور و اشتیاق من به این ورزش از همان دوران کودکی در زمین‌های خاکی مشهد آغاز شد." data-en="I, Amirhossein Zafarfard, started my football journey at the age of 8. My passion for this sport began in the dusty fields of Mashhad." data-tr="Ben, Amirhossein Zafarfard, 8 yaşında futbola başladım. Futbola olan tutkum Meşhed'in toprak sahalarında başladı.">من، امیرحسین ظفرفرد، از سن ۸ سالگی پا به دنیای فوتبال گذاشتم. شور و اشتیاق من به این ورزش از همان دوران کودکی در زمین‌های خاکی مشهد آغاز شد.</p>
+<p data-fa="در طول بیش از ۱۰ سال فعالیت حرفه‌ای‌ام، در تمامی رده‌های سنی لیگ‌های ایران بازی کردم و تجربیات ارزشمندی به دست آوردم." data-en="Over more than 10 years of playing professionally, I have competed in all age groups in Iran's leagues and gained invaluable experience." data-tr="10 yılı aşkın profesyonel kariyerimde İran liglerinin tüm yaş kategorilerinde oynayarak değerli deneyimler kazandım.">در طول بیش از ۱۰ سال فعالیت حرفه‌ای‌ام، در تمامی رده‌های سنی لیگ‌های ایران بازی کردم و تجربیات ارزشمندی به دست آوردم.</p>
+</section>
+<section>
+<h2 data-fa="افتخارات داخلی" data-en="Domestic Achievements" data-tr="Yurt İçi Başarılar">افتخارات داخلی</h2>
+<p data-fa="چهار مرتبه موفق به کسب عنوان آقای گل لیگ‌های فوتبال استان خراسان رضوی و شهر مشهد شدم که افتخاری بزرگ برای من و تیم‌هایم بود." data-en="I was honored four times as the top scorer of football leagues in Razavi Khorasan province and the city of Mashhad." data-tr="Horasan Razavi Eyaleti ve Meşhed'deki futbol liglerinde dört kez gol kralı olma onuruna eriştim.">چهار مرتبه موفق به کسب عنوان آقای گل لیگ‌های فوتبال استان خراسان رضوی و شهر مشهد شدم که افتخاری بزرگ برای من و تیم‌هایم بود.</p>
+<p data-fa="همچنین در تیم منتخب استان خراسان رضوی نیز بازی کردم و در مسابقات کشوری حضور یافتم." data-en="I also played for the Razavi Khorasan provincial selected team and competed at the national level." data-tr="Ayrıca Horasan Razavi eyalet seçilmiş takımında oynayarak ülke çapındaki turnuvalarda yer aldım.">همچنین در تیم منتخب استان خراسان رضوی نیز بازی کردم و در مسابقات کشوری حضور یافتم.</p>
+</section>
+<section>
+<h2 data-fa="مهاجرت و فوتبال در ترکیه" data-en="Migration and Football in Turkey" data-tr="Türkiye'ye Göç ve Futbol">مهاجرت و فوتبال در ترکیه</h2>
+<p data-fa="برای ادامه مسیر حرفه‌ای، تصمیم به مهاجرت به ترکیه گرفتم و در حال حاضر در تیم استانبول بوزکورت‌اسپور با شماره پیراهن ۱۱ بازی می‌کنم." data-en="To pursue my professional path, I migrated to Turkey and currently play as number 11 for Istanbul Bozkurtspor." data-tr="Profesyonel kariyerimi sürdürmek için Türkiye'ye göç ettim ve şu anda İstanbul Bozkurtspor takımında 11 numarayla oynuyorum.">برای ادامه مسیر حرفه‌ای، تصمیم به مهاجرت به ترکیه گرفتم و در حال حاضر در تیم استانبول بوزکورت‌اسپور با شماره پیراهن ۱۱ بازی می‌کنم.</p>
+<p data-fa="در لیگ آماتور ترکیه توانسته‌ام عملکرد خوبی از خود نشان دهم و به عنوان بازیکنی سرعتی، جنگنده و سرزن شناخته می‌شوم." data-en="In Turkey’s amateur league, I have shown strong performance and I’m recognized as a fast, aggressive, and strong header." data-tr="Türkiye amatör liginde iyi bir performans sergileyerek hızlı, savaşçı ve kafa vuruşlarında etkili bir oyuncu olarak tanınıyorum.">در لیگ آماتور ترکیه توانسته‌ام عملکرد خوبی از خود نشان دهم و به عنوان بازیکنی سرعتی، جنگنده و سرزن شناخته می‌شوم.</p>
+</section>
+<section>
+<h2 data-fa="زبان‌ها و ارتباطات" data-en="Languages and Communication" data-tr="Diller ve İletişim">زبان‌ها و ارتباطات</h2>
+<p data-fa="به زبان‌های فارسی و انگلیسی به طور روان صحبت می‌کنم. در زبان آلمانی تسلط خوبی بر مکالمات دارم و به زبان ترکی استانبولی نیز تا حدی آشنایی دارم." data-en="I speak Persian and English fluently. I have strong conversational skills in German and basic understanding of Turkish." data-tr="Farsça ve İngilizceyi akıcı konuşabiliyorum. Almanca konuşma konusunda iyiyim ve biraz Türkçe biliyorum.">به زبان‌های فارسی و انگلیسی به طور روان صحبت می‌کنم. در زبان آلمانی تسلط خوبی بر مکالمات دارم و به زبان ترکی استانبولی نیز تا حدی آشنایی دارم.</p>
+<p data-fa="ارتباطات بین‌المللی برایم اهمیت بالایی دارد چرا که هدف من بازی در سطح اول فوتبال اروپا و ارتباط با بازیکنان و مربیان برتر دنیاست." data-en="International communication is very important to me, as my goal is to play top-level football in Europe and collaborate with elite players and coaches." data-tr="Uluslararası iletişim benim için çok önemli çünkü hedefim Avrupa'nın en üst düzey liglerinde oynamak ve elit oyuncu ve antrenörlerle çalışmak.">ارتباطات بین‌المللی برایم اهمیت بالایی دارد چرا که هدف من بازی در سطح اول فوتبال اروپا و ارتباط با بازیکنان و مربیان برتر دنیاست.</p>
+</section>
+
+</main>
+<script>
+const ctx = document.getElementById('chart').getContext('2d');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['2019', '2020', '2021', '2022', '2023'],
+    datasets: [{ label: 'گل‌ها', data: [5, 9, 14, 22, 19], backgroundColor: '#bb86fc' }]
+  }
+});
+function setLang(lang) {
+  document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+    el.innerText = el.getAttribute('data-' + lang);
+  });
+}
+</script>
+</body>
 </html>
