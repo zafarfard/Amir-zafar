@@ -1,129 +1,167 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amirhossein Zafarfard | Official Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1b2e;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }header {
-        background-color: #6b21a8;
-        padding: 20px;
-        text-align: center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amirhossein Zafarfard - Football Player</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f0f9;
+      color: #333;
     }
-
-    header h1 {
-        margin: 0;
-        font-size: 2.5em;
+    header {
+      background-color: #6c3fc9;
+      color: white;
+      padding: 2rem;
+      text-align: center;
     }
-
     nav {
-        text-align: center;
-        padding: 15px;
-        background-color: #3f3c5a;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
     }
-
-    nav a {
-        color: #ffffff;
-        text-decoration: none;
-        margin: 0 15px;
-        font-weight: bold;
+    nav button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #6c3fc9;
+      color: white;
+      cursor: pointer;
     }
-
-    section {
-        max-width: 900px;
-        margin: 30px auto;
-        padding: 20px;
-        background-color: #2c2a3f;
-        border-radius: 10px;
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
-
-    section h2 {
-        color: #c084fc;
+    h2 {
+      color: #6c3fc9;
+      margin-top: 2rem;
     }
-
     footer {
-        background-color: #3f3c5a;
-        text-align: center;
-        padding: 15px;
-        color: #bbb;
+      background-color: #6c3fc9;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
     }
-
-    .lang-switch {
-        position: absolute;
-        right: 15px;
-        top: 20px;
-    }
-
-    .lang-switch button {
-        background-color: #c084fc;
-        border: none;
-        padding: 8px 12px;
-        margin-left: 10px;
-        border-radius: 5px;
-        color: #1e1b2e;
-        cursor: pointer;
-        font-weight: bold;
-    }
-</style>
-
-</head><body>
-    <header>
-        <h1>Amirhossein Zafarfard</h1>
-        <p>Professional Football Player</p>
-        <div class="lang-switch">
-            <button onclick="changeLang('en')">English</button>
-            <button onclick="changeLang('fa')">فارسی</button>
-            <button onclick="changeLang('tr')">Türkçe</button>
-        </div>
-    </header><nav>
-    <a href="#about">About Me</a>
-    <a href="#career">Career</a>
-    <a href="#goals">Goals</a>
-    <a href="#skills">Languages</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>I’m Amirhossein Zafarfard, born February 24, 2005, in Mashhad, Iran. I’m a forward footballer currently playing for Istanbul Bozkurtspor, wearing number 11. Standing at 184 cm and weighing 68 kg, I’ve played for various youth teams in Iran and was the top scorer four times in Mashhad and Khorasan leagues. My Instagram: <a style="color:#c084fc" href="https://instagram.com/zafarfard11">@zafarfard11</a>.</p>
-</section>
-
-<section id="career">
-    <h2>Career History</h2>
-    <p>Amateur League (4th tier) - Istanbul Bozkurtspor. Previously represented youth and provincial teams in Iran. Joined Turkish football to grow my game and climb the European ladder.</p>
-</section>
-
-<section id="goals">
-    <h2>Goals & Aspirations</h2>
-    <p>My ambition is to play in top European leagues, especially La Liga in Spain and Liga Portugal. I aim to move from Turkish leagues into higher competitive levels across Europe. My dream is to play for Real Madrid.</p>
-</section>
-
-<section id="skills">
-    <h2>Languages</h2>
-    <p>Fluent in Persian (Farsi), English, and Turkish.</p>
-</section>
-
-<section id="contact">
-    <h2>Contact Information</h2>
-    <p>Phone (Iran): +989050055365<br>
-       Phone (Turkey): +905468267220<br>
-       Email: contact.zafarfard@gmail.com<br>
-       Agent: Mahmoud Samadi – Instagram: <a style="color:#c084fc" href="https://instagram.com/fc.samadi">@fc.samadi</a>
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amirhossein Zafarfard</h1>
+    <p>Professional Football Player</p>
+    <nav>
+      <button onclick="changeLang('en')">English</button>
+      <button onclick="changeLang('fa')">فارسی</button>
+      <button onclick="changeLang('tr')">Türkçe</button>
+    </nav>
+  </header>
+  <div class="container" id="content">
+    <h2>Career Overview</h2>
+    <p>
+      Amirhossein Zafarfard, born on February 24, 2005 in Mashhad, Iran, is a talented forward currently playing for Istanbul Bozkurtspor in Turkey. Standing 184 cm tall and weighing 68 kg, he wears jersey number 11. He has a rich background in youth football clubs in Iran and was a top scorer in local and provincial leagues. He is now part of Turkey’s 4th amateur league with a clear goal to rise to the top European leagues like La Liga and Primeira Liga.
     </p>
-</section>
+    
+    <h2>Goals and Aspirations</h2>
+    <p>
+      Amirhossein dreams of playing for elite European clubs, especially Real Madrid. His plan involves moving up through Turkish leagues, then making a move to Spain or Portugal to fulfill his ambition of becoming a world-class striker.
+    </p>
 
-<footer>
-    &copy; 2025 Amirhossein Zafarfard | All rights reserved.
-</footer>
+    <h2>Languages</h2>
+    <p>Fluent in Persian, English, and Turkish</p>
 
-<script>
+    <h2>Achievements</h2>
+    <ul>
+      <li>Top scorer in Mashhad and provincial leagues (4 times)</li>
+      <li>Selected for Khorasan Razavi provincial team (2023–2024)</li>
+      <li>Joined Istanbul Bozkurtspor Amateur League 4</li>
+    </ul>
+
+    <h2>Psychological Profile</h2>
+    <p>
+      Known for resilience, high IQ, and strong personal discipline. Amirhossein values goals and personal development over distractions, which fuels his consistent training and ambition.
+    </p>
+
+    <h2>Contact</h2>
+    <p>Instagram: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></p>
+    <p>Phone: +989050055365</p>
+    <p>Manager: Mahmoud Samadi – <a href="https://instagram.com/fc.samadi" target="_blank">@fc.samadi</a></p>
+    <p>Manager Phone: +905468267220</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Amirhossein Zafarfard</p>
+  </footer>
+
+  <script>
+    const translations = {
+      en: document.getElementById('content').innerHTML,
+      fa: `
+        <h2>مرور حرفه‌ای</h2>
+        <p>
+          امیرحسین ظفرفرد، متولد ۶ اسفند ۱۳۸۳ در مشهد، ایران، مهاجم بااستعدادی است که در حال حاضر در تیم استانبول بوزکورت‌اسپور در ترکیه بازی می‌کند. قد او ۱۸۴ سانتی‌متر و وزنش ۶۸ کیلوگرم است و با شماره ۱۱ بازی می‌کند. سابقه درخشانی در تیم‌های پایه ایران دارد و چند بار آقای گل لیگ‌های مشهد و استان شده است. اکنون در لیگ آماتور دسته چهارم ترکیه بازی می‌کند و هدفش صعود به لیگ‌های برتر اروپاست.
+        </p>
+        <h2>اهداف و آرزوها</h2>
+        <p>
+          امیرحسین رؤیای بازی در تیم‌های بزرگ اروپایی، به‌ویژه رئال مادرید را در سر دارد. برنامه او پیشروی در لیگ‌های ترکیه و سپس رفتن به اسپانیا یا پرتغال برای رسیدن به جایگاه یک مهاجم سطح جهانی است.
+        </p>
+        <h2>زبان‌ها</h2>
+        <p>مسلط به فارسی، انگلیسی و ترکی</p>
+        <h2>افتخارات</h2>
+        <ul>
+          <li>۴ بار آقای گل لیگ‌های مشهد و استان</li>
+          <li>عضو تیم منتخب استان خراسان رضوی (۱۴۰۲–۱۴۰۳)</li>
+          <li>بازیکن لیگ چهارم ترکیه با تیم بوزکورت‌اسپور</li>
+        </ul>
+        <h2>ویژگی‌های شخصیتی</h2>
+        <p>
+          معروف به اراده بالا، هوش زیاد و انضباط شخصی. امیرحسین اهداف و پیشرفت فردی را مقدم بر حواس‌پرتی‌ها می‌داند و همین ویژگی‌ها، تمرین مداوم و جاه‌طلبی او را تضمین کرده‌اند.
+        </p>
+        <h2>راه‌های ارتباطی</h2>
+        <p>اینستاگرام: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></p>
+        <p>تلفن: +989050055365</p>
+        <p>مدیر برنامه: محمود صمدی – <a href="https://instagram.com/fc.samadi" target="_blank">@fc.samadi</a></p>
+        <p>شماره مدیر برنامه: +905468267220</p>
+      `,
+      tr: `
+        <h2>Kariyer Özeti</h2>
+        <p>
+          24 Şubat 2005 doğumlu Amirhossein Zafarfard, İran'ın Meşhed kentinden yetenekli bir forvettir. Şu anda Türkiye'de İstanbul Bozkurtspor takımında oynamaktadır. 184 cm boyunda ve 68 kg ağırlığındadır. 11 numaralı formayı giymektedir. İran'daki altyapı takımlarında önemli deneyime sahiptir ve yerel liglerde birçok kez gol kralı olmuştur. Şu anda Türkiye 4. Amatör Ligi'nde forma giymekte ve Avrupa'nın üst düzey liglerine yükselmeyi hedeflemektedir.
+        </p>
+        <h2>Hedefler ve Hayaller</h2>
+        <p>
+          Amirhossein, özellikle Real Madrid olmak üzere Avrupa'nın elit kulüplerinde oynamayı hayal etmektedir. Planı, Türkiye liglerinde ilerleyip ardından İspanya veya Portekiz'e transfer olarak dünya çapında bir forvet olmaktır.
+        </p>
+        <h2>Diller</h2>
+        <p>Farsça, İngilizce ve Türkçe</p>
+        <h2>Başarılar</h2>
+        <ul>
+          <li>Meşhed ve eyalet liglerinde 4 kez gol kralı</li>
+          <li>2023–2024 Horasan Rezevi bölge karmasına seçildi</li>
+          <li>İstanbul Bozkurtspor ile 4. Amatör Lig'de yer aldı</li>
+        </ul>
+        <h2>Psikolojik Profil</h2>
+        <p>
+          Kararlılığı, yüksek zekâsı ve güçlü kişisel disipliniyle tanınır. Amirhossein, hedeflerine ve kişisel gelişimine öncelik verir ve bu da onun düzenli antrenman yapmasını ve hırsını destekler.
+        </p>
+        <h2>İletişim</h2>
+        <p>Instagram: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></p>
+        <p>Telefon: +989050055365</p>
+        <p>Menajer: Mahmoud Samadi – <a href="https://instagram.com/fc.samadi" target="_blank">@fc.samadi</a></p>
+        <p>Menajer Telefonu: +905468267220</p>
+      `
+    };
+
     function changeLang(lang) {
-        alert("Multilingual support is coming soon.\nزبان‌ها به زودی فعال می‌شوند.\nÇok yakında çok dilli destek geliyor.");
+      document.getElementById('content').innerHTML = translations[lang];
     }
-</script>
+  </script>
+</body>
+</html>
 
-</body></html>
