@@ -15,7 +15,7 @@
     body {
       margin: 0;
       font-family: 'Vazirmatn', sans-serif;
-      background: url('https://images.unsplash.com/photo-1609334042436-cd9f2e48a8c0?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background: url('https://raw.githubusercontent.com/mahdixcode/assets/main/football-bg-purple.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
       transition: background 0.3s, color 0.3s;
@@ -65,8 +65,11 @@
     nav a:hover::after {
       opacity: 1;
     }
+    .lang-switcher {
+      display: flex;
+      gap: 0.5rem;
+    }
     .lang-switcher button {
-      margin-right: 10px;
       background: #fff;
       color: #6a11cb;
       border: none;
@@ -87,13 +90,6 @@
       color: white;
       border-bottom: 4px solid #bb86fc;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    }
-    header::before {
-      content: url('https://upload.wikimedia.org/wikipedia/commons/1/1e/Football_pitch_icon.svg');
-      display: block;
-      margin: 0 auto 1rem;
-      max-width: 100px;
-      opacity: 0.4;
     }
     .container {
       max-width: 1000px;
@@ -144,18 +140,18 @@
     .stats {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 1rem;
       justify-content: center;
       margin: 2rem 0;
     }
     .stat-card {
-      background: rgba(106, 17, 203, 0.7);
-      padding: 1rem;
-      width: 150px;
+      background: rgba(106, 17, 203, 0.6);
+      padding: 0.5rem;
+      width: 100px;
       text-align: center;
-      border-radius: 15px;
-      border: 2px solid #bb86fc;
-      box-shadow: 0 0 10px #6a11cb;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      border: 1px solid #bb86fc;
     }
     .footer {
       text-align: center;
@@ -212,31 +208,30 @@
       <a href="#contact">ارتباط</a>
     </div>
     <div class="lang-switcher">
-      <button>FA</button>
-      <button>EN</button>
-      <button>TR</button>
+      <button onclick="changeLang('fa')">FA</button>
+      <button onclick="changeLang('en')">EN</button>
+      <button onclick="changeLang('tr')">TR</button>
     </div>
   </nav>
   <header>
-    <h1>امیرحسین ظفرفرد</h1>
-    <p>مهاجم فوتبال | بازیکن استانبول بوزکورت‌اسپور</p>
+    <h1 id="title">امیرحسین ظفرفرد</h1>
+    <p id="subtitle">مهاجم فوتبال | بازیکن استانبول بوزکورت‌اسپور</p>
   </header>
   <div class="container" id="intro">
-    <h2>معرفی کامل</h2>
-    <p>
+    <h2 id="about-title">معرفی کامل</h2>
+    <p id="about-text">
       امیرحسین ظفرفرد، متولد ۲۴ فوریه ۲۰۰۵ در مشهد، ایران است. او با قد ۱۸۴ سانتی‌متر و وزن ۶۸ کیلوگرم، به عنوان یک مهاجم فوتبال، شناخته می‌شود. امیرحسین در حال حاضر در تیم استانبول بوزکورت‌اسپور با شماره پیراهن ۱۱ بازی می‌کند. او سابقه بازی در تیم‌های پایه مختلف ایران و همچنین تیم منتخب استان خراسان رضوی در سال ۱۴۰۲–۱۴۰۳ را دارد. وی چهار مرتبه آقای گل لیگ‌های مشهد و استان شده است.
     </p>
-    <p>
+    <p id="about-text-2">
       او به زبان‌های فارسی، انگلیسی، ترکی و آلمانی مسلط است و تمرکز اصلی‌اش روی پیشرفت حرفه‌ای در فوتبال اروپا به‌ویژه اسپانیا، پرتغال و ایتالیاست. امیرحسین به تنهایی برای ادامه مسیر حرفه‌ای خود به ترکیه مهاجرت کرده و اولویت زندگی‌اش را موفقیت در فوتبال قرار داده است. او معتقد است که با تلاش روزانه و تمرین منظم، می‌تواند به آرزوهایش در فوتبال اروپا برسد.
     </p>
   </div>
   <div class="container" id="stats">
-    <h2>افتخارات و آمار</h2>
     <div class="stats">
-      <div class="stat-card"><h3>۱۸۴ cm</h3><p>قد</p></div>
-      <div class="stat-card"><h3>۶۸ kg</h3><p>وزن</p></div>
-      <div class="stat-card"><h3>۴×</h3><p>آقای گل</p></div>
-      <div class="stat-card"><h3>#11</h3><p>شماره پیراهن</p></div>
+      <div class="stat-card">قد: ۱۸۴ cm</div>
+      <div class="stat-card">وزن: ۶۸ kg</div>
+      <div class="stat-card">۴× آقای گل</div>
+      <div class="stat-card">شماره پیراهن: 11</div>
     </div>
   </div>
   <div class="container" id="gallery">
@@ -265,8 +260,33 @@
   </div>
   <script>
     function toggleMode() {
-      const body = document.body;
-      body.classList.toggle('light');
+      document.body.classList.toggle('light');
+    }
+    function changeLang(lang) {
+      const titles = {
+        fa: ['امیرحسین ظفرفرد', 'مهاجم فوتبال | بازیکن استانبول بوزکورت‌اسپور', 'معرفی کامل'],
+        en: ['Amirhossein Zafarfard', 'Striker | Player of Istanbul Bozkurtspor', 'Full Biography'],
+        tr: ['Amirhossein Zafarfard', 'Forvet | İstanbul Bozkurtspor Oyuncusu', 'Tam Tanıtım']
+      };
+      const about = {
+        fa: [
+          'امیرحسین ظفرفرد، متولد ۲۴ فوریه ۲۰۰۵ در مشهد، ایران است... ',
+          'او به زبان‌های فارسی، انگلیسی، ترکی و آلمانی مسلط است...'
+        ],
+        en: [
+          'Amirhossein Zafarfard was born on February 24, 2005 in Mashhad, Iran...',
+          'He is fluent in Persian, English, Turkish, and German...'
+        ],
+        tr: [
+          'Amirhossein Zafarfard, 24 Şubat 2005'te İran'ın Meşhed şehrinde doğdu...',
+          'Farsça, İngilizce, Türkçe ve Almanca biliyor...'
+        ]
+      };
+      document.getElementById('title').textContent = titles[lang][0];
+      document.getElementById('subtitle').textContent = titles[lang][1];
+      document.getElementById('about-title').textContent = titles[lang][2];
+      document.getElementById('about-text').textContent = about[lang][0];
+      document.getElementById('about-text-2').textContent = about[lang][1];
     }
   </script>
 </body>
