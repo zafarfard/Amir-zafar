@@ -1,167 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amirhossein Zafarfard - Football Player</title>
+  <title>امیرحسین ظفرفرد | Zafarfard</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f3f0f9;
-      color: #333;
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.8;
+      direction: rtl;
     }
+
     header {
-      background-color: #6c3fc9;
-      color: white;
+      background-color: #5c2d91;
       padding: 2rem;
       text-align: center;
+      color: #fff;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #bb86fc;
+      border-bottom: 2px solid #5c2d91;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .flags {
       margin-top: 1rem;
     }
-    nav button {
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 4px;
-      background-color: #6c3fc9;
-      color: white;
-      cursor: pointer;
+
+    .flags img {
+      height: 32px;
+      margin-left: 8px;
     }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #6c3fc9;
-      margin-top: 2rem;
-    }
+
     footer {
-      background-color: #6c3fc9;
-      color: white;
       text-align: center;
-      padding: 1rem;
+      font-size: 0.9rem;
       margin-top: 3rem;
+      padding: 1rem;
+      border-top: 1px solid #333;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .gallery img {
+      max-width: 180px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #222;
+    }
+
+    .bg-football {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/2/25/Football_pitch_vector.svg') no-repeat center top;
+      background-size: contain;
+      opacity: 0.04;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
     }
   </style>
 </head>
+
 <body>
+  <div class="bg-football"></div>
   <header>
-    <h1>Amirhossein Zafarfard</h1>
-    <p>Professional Football Player</p>
-    <nav>
-      <button onclick="changeLang('en')">English</button>
-      <button onclick="changeLang('fa')">فارسی</button>
-      <button onclick="changeLang('tr')">Türkçe</button>
-    </nav>
+    <h1>امیرحسین ظفرفرد</h1>
+    <p>مهاجم جوان ایرانی، فعال در لیگ ترکیه و آینده‌دار فوتبال اروپا</p>
+    <div class="flags">
+      <img src="https://flagcdn.com/w40/ir.png" alt="IR">
+      <img src="https://flagcdn.com/w40/tr.png" alt="TR">
+      <img src="https://flagcdn.com/w40/gb.png" alt="EN">
+      <img src="https://flagcdn.com/w40/de.png" alt="DE">
+    </div>
   </header>
-  <div class="container" id="content">
-    <h2>Career Overview</h2>
-    <p>
-      Amirhossein Zafarfard, born on February 24, 2005 in Mashhad, Iran, is a talented forward currently playing for Istanbul Bozkurtspor in Turkey. Standing 184 cm tall and weighing 68 kg, he wears jersey number 11. He has a rich background in youth football clubs in Iran and was a top scorer in local and provincial leagues. He is now part of Turkey’s 4th amateur league with a clear goal to rise to the top European leagues like La Liga and Primeira Liga.
-    </p>
-    
-    <h2>Goals and Aspirations</h2>
-    <p>
-      Amirhossein dreams of playing for elite European clubs, especially Real Madrid. His plan involves moving up through Turkish leagues, then making a move to Spain or Portugal to fulfill his ambition of becoming a world-class striker.
-    </p>
 
-    <h2>Languages</h2>
-    <p>Fluent in Persian, English, and Turkish</p>
+  <div class="container">
+    <section>
+      <h2>مرور حرفه‌ای</h2>
+      <p>
+        من امیرحسین ظفرفرد هستم، متولد ۲۴ فوریه ۲۰۰۵ در مشهد، ایران. فوتبالیستی با سبک هجومی، سرعت بالا و ذهن برنده. از لیگ‌های پایه در ایران شروع کردم و حالا در تیم استانبول بوزکورت‌اسپور، شماره ۱۱، در لیگ آماتور ترکیه بازی می‌کنم.
+      </p>
+    </section>
 
-    <h2>Achievements</h2>
-    <ul>
-      <li>Top scorer in Mashhad and provincial leagues (4 times)</li>
-      <li>Selected for Khorasan Razavi provincial team (2023–2024)</li>
-      <li>Joined Istanbul Bozkurtspor Amateur League 4</li>
-    </ul>
+    <section>
+      <h2>افتخارات</h2>
+      <ul>
+        <li>۴ بار آقای گل لیگ مشهد و استان</li>
+        <li>عضو تیم منتخب استان خراسان رضوی در فصل ۱۴۰۲–۱۴۰۳</li>
+        <li>بازی در تیم‌های پایه ایران</li>
+      </ul>
+    </section>
 
-    <h2>Psychological Profile</h2>
-    <p>
-      Known for resilience, high IQ, and strong personal discipline. Amirhossein values goals and personal development over distractions, which fuels his consistent training and ambition.
-    </p>
+    <section>
+      <h2>اهداف</h2>
+      <p>
+        رسیدن به سطح حرفه‌ای در اروپا، خصوصاً لالیگا اسپانیا و لیگ پرتغال. هدف نهایی: بازی در رئال مادرید.
+      </p>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Instagram: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></p>
-    <p>Phone: +989050055365</p>
-    <p>Manager: Mahmoud Samadi – <a href="https://instagram.com/fc.samadi" target="_blank">@fc.samadi</a></p>
-    <p>Manager Phone: +905468267220</p>
+    <section>
+      <h2>زبان‌ها</h2>
+      <p>فارسی (مادری)، ترکی استانبولی (روان)، انگلیسی (پیشرفته)، آلمانی (در حال یادگیری)</p>
+    </section>
+
+    <section>
+      <h2>ویژگی‌های شخصی و روان‌شناسی</h2>
+      <p>
+        شخصیت رقابتی، تمرکز بالا، نظم و انضباط شخصی، و علاقه شدید به پیشرفت. تست‌های روان‌شناسی نشان‌دهنده ضریب هوشی بالا و هوش هیجانی قوی هستند.
+      </p>
+    </section>
+
+    <section>
+      <h2>راه‌های ارتباطی</h2>
+      <ul>
+        <li>اینستاگرام: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></li>
+        <li>مدیر برنامه: محمود صمدی - <a href="https://instagram.com/fc.samadi" target="_blank">@fc.samadi</a></li>
+        <li>تماس ایران: +989050055365</li>
+        <li>تماس ترکیه: +905468267220</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>گالری تصاویر</h2>
+      <div class="gallery">
+        <img src="https://i.imgur.com/VQwSgZl.jpg" alt="Amir 1">
+        <img src="https://i.imgur.com/sI2z8zN.jpg" alt="Amir 2">
+        <img src="https://i.imgur.com/x7GoCSa.jpg" alt="Amir 3">
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 امیرحسین ظفرفرد - طراحی و توسعه توسط تیم OpenAI</p>
+    </footer>
   </div>
-
-  <footer>
-    <p>© 2025 Amirhossein Zafarfard</p>
-  </footer>
-
-  <script>
-    const translations = {
-      en: document.getElementById('content').innerHTML,
-      fa: `
-        <h2>مرور حرفه‌ای</h2>
-        <p>
-          امیرحسین ظفرفرد، متولد ۶ اسفند ۱۳۸۳ در مشهد، ایران، مهاجم بااستعدادی است که در حال حاضر در تیم استانبول بوزکورت‌اسپور در ترکیه بازی می‌کند. قد او ۱۸۴ سانتی‌متر و وزنش ۶۸ کیلوگرم است و با شماره ۱۱ بازی می‌کند. سابقه درخشانی در تیم‌های پایه ایران دارد و چند بار آقای گل لیگ‌های مشهد و استان شده است. اکنون در لیگ آماتور دسته چهارم ترکیه بازی می‌کند و هدفش صعود به لیگ‌های برتر اروپاست.
-        </p>
-        <h2>اهداف و آرزوها</h2>
-        <p>
-          امیرحسین رؤیای بازی در تیم‌های بزرگ اروپایی، به‌ویژه رئال مادرید را در سر دارد. برنامه او پیشروی در لیگ‌های ترکیه و سپس رفتن به اسپانیا یا پرتغال برای رسیدن به جایگاه یک مهاجم سطح جهانی است.
-        </p>
-        <h2>زبان‌ها</h2>
-        <p>مسلط به فارسی، انگلیسی و ترکی</p>
-        <h2>افتخارات</h2>
-        <ul>
-          <li>۴ بار آقای گل لیگ‌های مشهد و استان</li>
-          <li>عضو تیم منتخب استان خراسان رضوی (۱۴۰۲–۱۴۰۳)</li>
-          <li>بازیکن لیگ چهارم ترکیه با تیم بوزکورت‌اسپور</li>
-        </ul>
-        <h2>ویژگی‌های شخصیتی</h2>
-        <p>
-          معروف به اراده بالا، هوش زیاد و انضباط شخصی. امیرحسین اهداف و پیشرفت فردی را مقدم بر حواس‌پرتی‌ها می‌داند و همین ویژگی‌ها، تمرین مداوم و جاه‌طلبی او را تضمین کرده‌اند.
-        </p>
-        <h2>راه‌های ارتباطی</h2>
-        <p>اینستاگرام: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></p>
-        <p>تلفن: +989050055365</p>
-        <p>مدیر برنامه: محمود صمدی – <a href="https://instagram.com/fc.samadi" target="_blank">@fc.samadi</a></p>
-        <p>شماره مدیر برنامه: +905468267220</p>
-      `,
-      tr: `
-        <h2>Kariyer Özeti</h2>
-        <p>
-          24 Şubat 2005 doğumlu Amirhossein Zafarfard, İran'ın Meşhed kentinden yetenekli bir forvettir. Şu anda Türkiye'de İstanbul Bozkurtspor takımında oynamaktadır. 184 cm boyunda ve 68 kg ağırlığındadır. 11 numaralı formayı giymektedir. İran'daki altyapı takımlarında önemli deneyime sahiptir ve yerel liglerde birçok kez gol kralı olmuştur. Şu anda Türkiye 4. Amatör Ligi'nde forma giymekte ve Avrupa'nın üst düzey liglerine yükselmeyi hedeflemektedir.
-        </p>
-        <h2>Hedefler ve Hayaller</h2>
-        <p>
-          Amirhossein, özellikle Real Madrid olmak üzere Avrupa'nın elit kulüplerinde oynamayı hayal etmektedir. Planı, Türkiye liglerinde ilerleyip ardından İspanya veya Portekiz'e transfer olarak dünya çapında bir forvet olmaktır.
-        </p>
-        <h2>Diller</h2>
-        <p>Farsça, İngilizce ve Türkçe</p>
-        <h2>Başarılar</h2>
-        <ul>
-          <li>Meşhed ve eyalet liglerinde 4 kez gol kralı</li>
-          <li>2023–2024 Horasan Rezevi bölge karmasına seçildi</li>
-          <li>İstanbul Bozkurtspor ile 4. Amatör Lig'de yer aldı</li>
-        </ul>
-        <h2>Psikolojik Profil</h2>
-        <p>
-          Kararlılığı, yüksek zekâsı ve güçlü kişisel disipliniyle tanınır. Amirhossein, hedeflerine ve kişisel gelişimine öncelik verir ve bu da onun düzenli antrenman yapmasını ve hırsını destekler.
-        </p>
-        <h2>İletişim</h2>
-        <p>Instagram: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></p>
-        <p>Telefon: +989050055365</p>
-        <p>Menajer: Mahmoud Samadi – <a href="https://instagram.com/fc.samadi" target="_blank">@fc.samadi</a></p>
-        <p>Menajer Telefonu: +905468267220</p>
-      `
-    };
-
-    function changeLang(lang) {
-      document.getElementById('content').innerHTML = translations[lang];
-    }
-  </script>
 </body>
-</html>
 
+</html>
