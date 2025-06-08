@@ -1,110 +1,161 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<!DOCTYPE html><html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>امیرحسین ظفرفرد</title>
+  <title>امیرحسین ظفرفرد | فوتبالیست حرفه‌ای</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Vazirmatn', sans-serif;
-      background-color: #0f0f1f;
-      color: #fff;
       margin: 0;
-      padding: 0;
-      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Vazirmatn', sans-serif;
+      background: url('images/stadium-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      transition: background 0.3s, color 0.3s;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(13, 13, 13, 0.8);
+      z-index: -1;
     }
     header {
-      background-color: #800080;
-      padding: 20px;
+      background: linear-gradient(to left, #6a11cb, #2575fc);
+      padding: 2rem;
       text-align: center;
+      color: white;
+      border-bottom: 4px solid #bb86fc;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(187, 134, 252, 0.5);
     }
-    .content {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      line-height: 2.2;
+    h1, h2 {
+      color: #bb86fc;
+      text-shadow: 1px 1px 4px #000;
+    }
+    p, li {
       font-size: 1.1rem;
+      line-height: 2;
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      background: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      z-index: 10;
+      box-shadow: 0 0 10px rgba(187, 134, 252, 0.6);
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 15px;
-      padding: 20px;
+      margin-top: 2rem;
+      justify-content: center;
     }
     .gallery img {
-      width: 220px;
-      height: auto;
-      border-radius: 10px;
-      border: 2px solid #ccc;
+      width: 200px;
+      border-radius: 12px;
+      border: 3px solid #bb86fc;
+      transition: transform 0.3s;
     }
-    .lang-switcher, .mode-switcher {
-      margin: 10px;
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .footer {
       text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      border-top: 1px solid #bb86fc;
+      margin-top: 4rem;
     }
-    select, button {
-      font-size: 1rem;
-      padding: 5px 10px;
-      margin: 5px;
-      border-radius: 5px;
-      border: none;
+    a {
+      color: #82aaff;
+      text-decoration: none;
     }
-    .light-mode {
-      background-color: #ffffff;
-      color: #111;
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-list li {
+      margin: 0.5rem 0;
+    }
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
+  <button class="toggle-btn" onclick="toggleMode()">🌓 تغییر حالت</button>
   <header>
     <h1>امیرحسین ظفرفرد</h1>
+    <p>مهاجم فوتبال | بازیکن استانبول بوزکورت‌اسپور</p>
   </header>
+  <div class="container">
+    <h2>معرفی کامل</h2>
+    <p>
+      امیرحسین ظفرفرد، متولد ۲۴ فوریه ۲۰۰۵ در مشهد، ایران است. او با قد ۱۸۴ سانتی‌متر و وزن ۶۸ کیلوگرم، به عنوان یک مهاجم فوتبال، شناخته می‌شود. امیرحسین در حال حاضر در تیم استانبول بوزکورت‌اسپور با شماره پیراهن ۱۱ بازی می‌کند. او سابقه بازی در تیم‌های پایه مختلف ایران و همچنین تیم منتخب استان خراسان رضوی در سال ۱۴۰۲–۱۴۰۳ را دارد. وی چهار مرتبه آقای گل لیگ‌های مشهد و استان شده است.
+    </p>
+    <p>
+      او به زبان‌های فارسی، انگلیسی، ترکی و آلمانی مسلط است و تمرکز اصلی‌اش روی پیشرفت حرفه‌ای در فوتبال اروپا به‌ویژه اسپانیا، پرتغال و ایتالیاست. امیرحسین به تنهایی برای ادامه مسیر حرفه‌ای خود به ترکیه مهاجرت کرده و اولویت زندگی‌اش را موفقیت در فوتبال قرار داده است. او معتقد است که با تلاش روزانه و تمرین منظم، می‌تواند به آرزوهایش در فوتبال اروپا برسد. او هر روز تمرین می‌کند و حدود ۸ کیلومتر پیاده‌روی دارد.
+    </p><h2>اهداف حرفه‌ای</h2>
+<p>
+  هدف نهایی امیرحسین، بازی در بهترین لیگ‌های اروپایی مانند لالیگا، لیگ پرتغال و در نهایت باشگاه رویایی‌اش، رئال مادرید است.
+</p>
 
-  <div class="mode-switcher">
-    <button onclick="toggleMode()">تغییر حالت (روز / شب)</button>
+<h2>گالری تصاویر</h2>
+<div class="gallery">
+  <img src="images/zafar1.jpg" alt="zafar1" />
+  <img src="images/zafar2.jpg" alt="zafar2" />
+  <img src="images/zafar3.jpg" alt="zafar3" />
+</div>
+
+<h2>راه‌های ارتباطی</h2>
+<ul class="contact-list">
+  <li>اینستاگرام: <a href="https://instagram.com/zafarfard11" target="_blank">@zafarfard11</a></li>
+  <li>مدیر برنامه: محمود صمدی</li>
+  <li>شماره تماس مدیر برنامه: +90 546 826 7220</li>
+</ul>
+
   </div>
-
-  <div class="lang-switcher">
-    <label for="lang">انتخاب زبان:</label>
-    <select id="lang" onchange="switchLang(this.value)">
-      <option value="fa">فارسی</option>
-      <option value="en">English</option>
-      <option value="tr">Türkçe</option>
-      <option value="de">Deutsch</option>
-    </select>
+  <div class="footer">
+    طراحی شده توسط ChatGPT - 2025
   </div>
-
-  <div class="content" id="bio"></div>
-
-  <div class="gallery">
-    <img src="images/img1.jpg" alt="photo 1" />
-    <img src="images/img2.jpg" alt="photo 2" />
-    <img src="images/img3.jpg" alt="photo 3" />
-  </div>
-
   <script>
-    const content = {
-      fa: `...`,
-      en: `...`,
-      tr: `...`,
-      de: `...`
-    };
-
-    function switchLang(lang) {
-      document.getElementById("bio").innerText = content[lang] || content.fa;
-    }
-
     function toggleMode() {
-      document.body.classList.toggle("light-mode");
+      const body = document.body;
+      body.classList.toggle('light');
+      if (body.classList.contains('light')) {
+        body.style.background = '#f5f5f5';
+        body.style.color = '#000000';
+        document.querySelector('.container').style.backgroundColor = '#ffffff';
+      } else {
+        body.style.background = "url('images/stadium-bg.jpg') no-repeat center center fixed";
+        body.style.backgroundSize = "cover";
+        body.style.color = '#ffffff';
+        document.querySelector('.container').style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+      }
     }
-
-    window.onload = function () {
-      switchLang("fa");
-    };
   </script>
 </body>
-</html>
+  </html>
